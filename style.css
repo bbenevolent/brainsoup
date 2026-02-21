@@ -214,6 +214,36 @@ nav {
   color: var(--teal);
 }
 
+/* === EPISODE EXPAND === */
+.episode-expand {
+  margin-bottom: 0.75rem;
+}
+
+.episode-expand summary {
+  cursor: pointer;
+  color: var(--teal-bright);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  list-style: none;
+  margin-top: 0.3rem;
+}
+
+.episode-expand summary::-webkit-details-marker { display: none; }
+
+.episode-expand summary::before {
+  content: '▸ ';
+  color: var(--red);
+}
+
+.episode-expand[open] summary::before {
+  content: '▾ ';
+}
+
+.episode-expand .episode-description {
+  margin-top: 0.5rem;
+}
+
 /* === FOOTER === */
 footer {
   border-top: 2px solid var(--red);
