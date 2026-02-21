@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brain Soup</title>
+  <meta name="description" content="A podcast about neurodivergent brains, broken systems, and the weird ideas that hold everything together.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/" class="nav-logo">🧠🍜 Brain Soup</a>
+      <div class="nav-links">
+        <a href="/about">About</a>
+        <a href="/guest">Submit a Guest Idea</a>
+        <a href="/contact">Contact Us</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Brain Soup</h1>
+      <p class="tagline">All brains are soup. Yours just has more salt.</p>
+      <p class="subtitle">A podcast about neurodivergent brains, broken systems, and the weird ideas that hold everything together.</p>
+      <div class="listen-links">
+        <a href="#" class="btn btn-primary">Listen on Spotify</a>
+      </div>
+    </section>
+
+    <section class="episodes">
+      <h2>Episodes</h2>
+
+      <article class="episode">
+        <div class="episode-card">
+          <img src="images/ep01.png" alt="Episode 1 card art" class="episode-art">
+        </div>
+        <div class="episode-info">
+          <span class="episode-number">Episode 1</span>
+          <h3>Kate, That</h3>
+          <p class="episode-description">Kate Chapman and That Damn Tee kick things off talking queer cognition, systems thinking, why job descriptions are a form of violence, and the Honda Element as a lifestyle.</p>
+          <div class="episode-meta">
+            <span class="episode-date">February 2026</span>
+          </div>
+          <a href="#" class="btn btn-secondary">Listen on Spotify</a>
+        </div>
+      </article>
+
+      <article class="episode">
+        <div class="episode-card">
+          <img src="images/ep02.png" alt="Episode 2 card art" class="episode-art" style="opacity:0.4">
+        </div>
+        <div class="episode-info">
+          <span class="episode-number">Episode 2</span>
+          <h3>Coming Soon</h3>
+          <p class="episode-description">More soup is simmering.</p>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    <p class="disclaimer">Rules were harmed in the making of this podcast.</p>
+    <p>&copy; 2026 Brain Soup</p>
+  </footer>
+
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

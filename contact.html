@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Brain Soup</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/" class="nav-logo">🧠🍜 Brain Soup</a>
+      <div class="nav-links">
+        <a href="/about">About</a>
+        <a href="/guest">Submit a Guest Idea</a>
+        <a href="/contact">Contact Us</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-content">
+      <h1>Contact Us</h1>
+      <p>Got feedback, a rant about systems, or just want to tell us about your Honda Element? We're here for it.</p>
+      <p>Email: <a href="mailto:hello@brainsoup.show">hello@brainsoup.show</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p class="disclaimer">Rules were harmed in the making of this podcast.</p>
+    <p>&copy; 2026 Brain Soup</p>
+  </footer>
+
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

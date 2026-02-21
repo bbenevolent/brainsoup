@@ -1,0 +1,306 @@
+/* === Brain Soup — Post-apocalyptic zine aesthetic === */
+
+:root {
+  --bg: #1a1714;
+  --bg-card: #232019;
+  --cream: #f0e6d3;
+  --cream-dim: #c4b89e;
+  --red: #b8443a;
+  --red-bright: #d4564a;
+  --teal: #5a8a7a;
+  --teal-bright: #7ab8a4;
+  --green: #6a7a3a;
+  --text: #e8dcc8;
+  --text-dim: #9a9080;
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --font-mono: 'Courier Prime', 'Courier New', monospace;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-mono);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* === NAV === */
+header {
+  border-bottom: 2px solid var(--red);
+  background: var(--bg);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--cream);
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: var(--cream-dim);
+  text-decoration: none;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover { color: var(--red-bright); }
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--cream);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* === HERO === */
+.hero {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 3rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--cream);
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: var(--red-bright);
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: var(--text-dim);
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+/* === BUTTONS === */
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  text-decoration: none;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: var(--red);
+  color: var(--cream);
+}
+
+.btn-primary:hover {
+  background: var(--red-bright);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--teal-bright);
+  border: 1px solid var(--teal);
+}
+
+.btn-secondary:hover {
+  background: var(--teal);
+  color: var(--cream);
+}
+
+/* === EPISODES === */
+.episodes {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem;
+}
+
+.episodes h2 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--cream-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--text-dim);
+}
+
+.episode {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid #3a352c;
+  border-radius: 6px;
+}
+
+.episode-card {
+  flex-shrink: 0;
+  width: 200px;
+}
+
+.episode-art {
+  width: 100%;
+  border-radius: 4px;
+  border: 2px solid #3a352c;
+}
+
+.episode-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.episode-number {
+  font-size: 0.75rem;
+  color: var(--red);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+}
+
+.episode-info h3 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--cream);
+  margin: 0.3rem 0 0.5rem;
+}
+
+.episode-description {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  margin-bottom: 0.75rem;
+}
+
+.episode-meta {
+  margin-bottom: 1rem;
+}
+
+.episode-date {
+  font-size: 0.8rem;
+  color: var(--teal);
+}
+
+/* === FOOTER === */
+footer {
+  border-top: 2px solid var(--red);
+  text-align: center;
+  padding: 2rem 1.5rem;
+  color: var(--text-dim);
+  font-size: 0.8rem;
+}
+
+.disclaimer {
+  font-style: italic;
+  color: var(--red);
+  margin-bottom: 0.5rem;
+}
+
+/* === PAGE CONTENT === */
+.page-content {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+}
+
+.page-content h1 {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  color: var(--cream);
+  margin-bottom: 1.5rem;
+}
+
+.page-content p {
+  margin-bottom: 1rem;
+  color: var(--text-dim);
+}
+
+.page-content a {
+  color: var(--teal-bright);
+}
+
+.page-content a:hover {
+  color: var(--cream);
+}
+
+.bios {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.bio h2 {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--cream);
+  margin-bottom: 0.5rem;
+}
+
+.bio p { color: var(--text-dim); }
+
+.form-placeholder {
+  margin-top: 2rem;
+  padding: 2rem;
+  border: 1px dashed var(--text-dim);
+  border-radius: 6px;
+  text-align: center;
+}
+
+/* === MOBILE === */
+@media (max-width: 640px) {
+  .nav-toggle { display: block; }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--bg);
+    border-bottom: 2px solid var(--red);
+    padding: 1rem 1.5rem;
+    gap: 1rem;
+  }
+  .nav-links.open { display: flex; }
+  .hero h1 { font-size: 2.5rem; }
+  .episode {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .episode-card { width: 160px; }
+}
